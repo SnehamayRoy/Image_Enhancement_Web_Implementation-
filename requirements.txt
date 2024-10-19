@@ -1,5 +1,5 @@
 Flask==2.1.2                  # For creating the API
-Flask-Cors==3.1.0             # For handling Cross-Origin Resource Sharing (CORS)
+Flask-Cors==3.0.10             # For handling Cross-Origin Resource Sharing (CORS)
 torch==2.0.1                  # For deep learning operations
 torchvision==0.15.2           # For image transformations and utilities
 Pillow==9.5.0                 # For handling image files
