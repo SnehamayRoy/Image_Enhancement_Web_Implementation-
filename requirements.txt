@@ -5,3 +5,5 @@ torchvision==0.15.2           # For image transformations and utilities
 Pillow==9.5.0                 # For handling image files
 numpy==1.24.3                 # For numerical operations
 opencv-python==4.8.0.74  # If you plan on using OpenCV for additional image handling
+gunicorn==20.1.0
+
