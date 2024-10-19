@@ -1,9 +1,10 @@
-Flask==2.1.2                  # For creating the API
-Flask-Cors==3.0.10             # For handling Cross-Origin Resource Sharing (CORS)
-torch==2.0.1                  # For deep learning operations
-torchvision==0.15.2           # For image transformations and utilities
-Pillow==9.5.0                 # For handling image files
-numpy==1.24.3                 # For numerical operations
-opencv-python==4.8.0.74  # If you plan on using OpenCV for additional image handling
+Flask==2.1.2
+Flask-Cors==3.0.10
 gunicorn==20.1.0
+torch==2.0.1
+torchvision==0.15.2
+Pillow==9.5.0
+numpy==1.24.3
+Werkzeug==2.2.3
+
 
