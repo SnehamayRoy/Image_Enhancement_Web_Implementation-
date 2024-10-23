@@ -42,8 +42,8 @@ def enhance_image():
     }
 
     # Use the Hugging Face API to enhance the image
-    client = Client("Snehamay/CycleGAN")
-    result = client.predict(
+    client2 = Client("Snehamay/CycleGAN")
+    result = client2.predict(
         input_image=input_image_data,  # Send the input image data
         api_name="/predict"
     )
