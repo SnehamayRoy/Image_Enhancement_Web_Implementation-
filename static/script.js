@@ -62,6 +62,8 @@ document.getElementById("upload-form").addEventListener("submit", async (e) => {
             document.getElementById("original-image");
           originalImageElement.src = URL.createObjectURL(blob); // Use the resized blob for preview
           originalImageElement.style.display = "block";
+          document.getElementById("original-title").style.display = "block";
+          document.getElementById("Enhanced-title").style.display = "block";
 
           // Display the enhanced image
           const enhancedImageElement =
