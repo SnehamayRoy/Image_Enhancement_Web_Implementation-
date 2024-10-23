@@ -220,6 +220,7 @@ body.dark-mode .progress-text {
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+  padding-right: -00px;
 }
 .carousel-control-prev,
 .carousel-control-next {
