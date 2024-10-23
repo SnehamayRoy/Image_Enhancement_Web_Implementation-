@@ -1,23 +1,9 @@
-from flask import Flask, request, jsonify, send_file
-import torch
-from PIL import Image
-from torchvision import transforms
-from io import BytesIO  # Replace with your model's file
-from flask import Flask, request, jsonify, render_template
-from PIL import Image
-import torch
-import requests
-import os
-from torchvision import transforms
-
-from torchvision.utils import save_image
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import torch
+from flask import Flask, request, send_file
 from PIL import Image
 import base64
 import io
-from gradio_client import Client, handle_file
+from gradio_client import Client
+from flask_cors import CORS
 
 app = Flask(__name__)
 
