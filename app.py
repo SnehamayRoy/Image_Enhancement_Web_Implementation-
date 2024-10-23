@@ -9,6 +9,9 @@ app = Flask(__name__)
 
 CORS(app)  # Enables CORS for all routes
 
+@app.route('/')
+def home():
+    return send_file('index.html')  
 # Or render a template
 
 
