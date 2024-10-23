@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-CORS(app)  # Enables CORS for all routes
+CORS(app, resources={r"/*": {"origins": ["https://image-enhancement-web-implementation.onrender.com/"]}})
 
 @app.route('/')
 def home():
