@@ -63,8 +63,8 @@ body.dark-mode .progress {
     37,
     37
   ) !important; /* Set navbar background to black */
-  padding-left: 20px; /* Adjust as needed */
-  padding-right: 20px;
+  padding-left: 18px; /* Adjust as needed */
+  padding-right: 18px;
   padding-top: 20px; /* Adjust as needed */
   padding-bottom: 20px;
 }
