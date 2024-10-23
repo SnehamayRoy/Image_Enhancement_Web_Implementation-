@@ -9,16 +9,9 @@ app = Flask(__name__)
 
 CORS(app)  # Enables CORS for all routes
 
-@app.route('/')
-def home():
-    return "Welcome to the Image Enhancement API!"  # Or render a template
-
-@app.route('/favicon.ico')
-def favicon():
-    return '', 204  # Handle favicon requests
 
 
-@app.route('/enhance', methods=['POST'])
+@app.route('/', methods=['POST'])
 def enhance_image():
     if 'image' not in request.files:
         return {"error": "No image provided."}, 400
