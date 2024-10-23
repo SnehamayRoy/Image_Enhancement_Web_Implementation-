@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file, render_template
+from flask import Flask, request, send_file, render_template,send_from_directory
 from PIL import Image
 import base64
 import io
@@ -12,6 +12,9 @@ CORS(app)  # Enables CORS for all routes
 @app.route('/')
 def home():
     return send_file('index.html')  
+@app.route('/static/<path:path>')
+def send_static(path):
+    return send_from_directory('static', path)
 # Or render a template
 
 
