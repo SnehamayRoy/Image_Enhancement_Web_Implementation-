@@ -9,7 +9,8 @@ body {
 .brand-container {
   display: flex;
   align-items: center; /* Centers the icon and text vertically */
-  gap: 10px; /* Space between the icon and text */
+  gap: 10px;
+  padding-right: 20px; /* Space between the icon and text */
 }
 
 .site-icon {
@@ -56,10 +57,7 @@ body.dark-mode .progress {
   background-color: #333; /* Dark background */
   color: #f0f0f0; /* Light text */
 }
-#download-button {
-  display: none;
-  margin-left: 289px; /* Adjust this value to move the button to the right */
-}
+
 .navbar {
   background-color: rgb(
     39,
@@ -67,7 +65,9 @@ body.dark-mode .progress {
     37
   ) !important; /* Set navbar background to black */
   padding-left: 20px; /* Adjust as needed */
-  padding-right: 20px; /* Adjust as needed */
+  padding-right: 20px;
+  padding-top: 20px; /* Adjust as needed */
+  padding-bottom: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link {
