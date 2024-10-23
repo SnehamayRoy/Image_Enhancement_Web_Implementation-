@@ -97,15 +97,21 @@
       </section>
 
       <section id="enhancement-tool">
-        <form id="upload-form">
-          <input
-            type="file"
-            id="image-input"
-            name="image"
-            accept="image/*"
-            required
-          />
-          <button type="submit">Enhance Image</button>
+        <form
+          id="upload-form"
+          class="d-flex flex-column align-items-center mb-3"
+        >
+          <div class="mb-3">
+            <input
+              type="file"
+              class="form-control"
+              id="image-input"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Enhance Image</button>
         </form>
         <div id="progress" class="progress" style="display: none">
           <div
