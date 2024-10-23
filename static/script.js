@@ -42,10 +42,13 @@ document.getElementById("upload-form").addEventListener("submit", async (e) => {
         document.querySelector(".progress").style.display = "block";
 
         try {
-          const response = await fetch("http://127.0.0.1:5000/enhance", {
-            method: "POST",
-            body: formData,
-          });
+          const response = await fetch(
+            "https://image-enhancement-web-implementation.onrender.com/enhance",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
 
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
