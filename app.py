@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template
 from PIL import Image
 import base64
 import io
@@ -9,9 +9,12 @@ app = Flask(__name__)
 
 CORS(app)  # Enables CORS for all routes
 
+@app.route('/')
+def home():
+    return render_template('index.html')  # Or render a template
 
 
-@app.route('/', methods=['POST'])
+@app.route('/enhance', methods=['POST'])
 def enhance_image():
     if 'image' not in request.files:
         return {"error": "No image provided."}, 400
