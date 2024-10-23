@@ -6,11 +6,21 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.brand-container {
+  display: flex;
+  align-items: center; /* Centers the icon and text vertically */
+  gap: 10px; /* Space between the icon and text */
+}
+
 .site-icon {
-  width: 40px; /* Adjust the size as needed */
-  height: 40px; /* Adjust the size as needed */
-  margin-right: -70px; /* Reduced space between the icon and title */
-  vertical-align: middle; /* Aligns the icon with the text */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.site-title {
+  font-size: 2em; /* Adjust size as needed */
+  margin: 0; /* Remove default margin */
+  color: white; /* Adjust to match the desired text color */
 }
 header {
   background-color: #313333;
@@ -91,7 +101,7 @@ body.dark-mode .progress {
 
 .site-title {
   font-size: 2.5em;
-  margin: 0 0 0 60px;
+  margin: 0 0 0 0px;
   flex-shrink: 0;
   color: #ddd; /* Prevents the title from shrinking */
 }
